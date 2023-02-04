@@ -1,4 +1,5 @@
 import pickle
+import bz2
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -18,7 +19,7 @@ def add_bg_from_url():
 add_bg_from_url()
 
 ### Unloading necessary data files
-model = pickle.load(open('model_rain_prediction.pkl', 'rb'))
+model = pickle.load(bz2.BZ2File('model_rain_prediction.pkl', 'rb'))
 orig_data=pd.read_csv('weatherAUS.csv')
 label_encoded_data=pd.read_csv('label_encoding_mapping.csv')
 scaled_data=pd.read_csv('scaling_mapping.csv')
@@ -105,8 +106,8 @@ output_test2= pd.DataFrame(output_test, columns=['Date', 'Location', 'MinTemp', 
 if st.button("Check if it will rain tomorrow or not", key="predict"):
     output = model.predict(output_test2)
     if (output==1):
-        st.warning('Take an umbrella with you. It will rain tomorrow')
+        st.warning('It will rain tomorrow')
     else:
-        st.success('Enjoy your sunny day. It will not rain tomorrow')
+        st.success('It will not rain tomorrow')
 
 
