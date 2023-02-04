@@ -51,7 +51,7 @@ https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
   * Tried to do encoding and scaling again in Streamlit.py but it took much effort. Also, for completing again same data had to be unloaded and encoding and scaling codes were supposed to be written down. So, skipped this process.
   * Finally, saved the mapping of encoding and scaling in a csv file and used that to encode and scale any new input data. Then already saved pickel of model was used to predict the data.
 
-6. Compressed Pickle file : The original '.pkl' file was having a size of 160MB, which cannot be uploaded to Github due to limitatin of maximum size of file to be of 25MB only. So, used another library "bz2" to compress the '.pkl' file and later uncompress to use the same.
+6. Compressed Pickle file : The original '.pkl' file was having a size of 160MB, which cannot be uploaded to Github due to limitations of maximum size of any file to be of 25MB only. So, used another library "bz2" to compress the '.pkl' file and later uncompress to use the same.
 
 
 ## References:
