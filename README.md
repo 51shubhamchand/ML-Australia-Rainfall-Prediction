@@ -7,7 +7,8 @@ Used Random Forest Classification Machine Learning algorithm to predict whether 
 R2 score = 0.88
 
 
-## [Click here to access the web app](https://51shubhamchand-ml-rain-prediction-streamlit-wxt7rg.streamlit.app/)
+## Link to access the web app:
+[Australia Rainfall Predictor Link](https://51shubhamchand-ml-rain-prediction-streamlit-wxt7rg.streamlit.app/)
 
 
 ## Preview:
