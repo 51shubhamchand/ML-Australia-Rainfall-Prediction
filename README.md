@@ -11,7 +11,7 @@ R2 score = 0.88
 
 
 ## Preview:
-<img width="287" alt="Screenshot 2023-02-05 at 3 33 32 AM" src="https://user-images.githubusercontent.com/36957216/216791383-d763a9e7-c62a-4bdb-a465-bade68add342.png">
+<img width="644" alt="Screenshot 2023-02-05 at 3 48 50 AM" src="https://user-images.githubusercontent.com/36957216/216791839-38575ae3-c173-4741-b641-78dc74394a83.png">
 
 
 ## Data source:
