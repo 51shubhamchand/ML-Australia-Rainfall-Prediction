@@ -4,7 +4,7 @@
 ## Brief:
 Used Random Forest Classification Machine Learning algorithm to predict whether it will rain tomorrow or not, based on given inputs.
 
-R2 score = 0.88
+Accuracy score = 88.6%
 
 
 ## Link to access the web app:
