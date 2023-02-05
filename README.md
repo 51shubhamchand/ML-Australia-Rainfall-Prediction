@@ -15,16 +15,6 @@ Accuracy score = 88.6%
 <img width="717" alt="Screenshot 2023-02-05 at 5 15 36 PM" src="https://user-images.githubusercontent.com/36957216/216816812-cf7fb80c-9530-4fcd-8fe8-fce6345d8fa1.png">
 
 
-## Data source:
-https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
-
-
-## Tools used:
-* Google Colab
-* Pycharm
-* Streamlit
-
-
 ## Challenges:
 1. Poor quality of data : Data was having a lot of NULL value for multiple columns.
 
@@ -53,6 +43,16 @@ https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
   * Finally, saved the mapping of encoding and scaling in a csv file and used that to encode and scale any new input data. Then already saved pickel of model was used to predict the data.
 
 6. Compressed Pickle file : The original '.pkl' file was having a size of 160MB, which cannot be uploaded to Github due to limitations of maximum size of any file to be of 25MB only. So, used another library "bz2" to compress the '.pkl' file and later uncompress to use the same.
+
+
+## Data source:
+https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
+
+
+## Tools used:
+* Google Colab
+* Pycharm
+* Streamlit
 
 
 ## References:
