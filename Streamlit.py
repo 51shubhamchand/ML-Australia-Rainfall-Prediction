@@ -26,32 +26,50 @@ scaled_data=pd.read_csv('scaling_mapping.csv')
 
 ### Setting Header and Text
 st.markdown("<h1 style='text-align: center; color: White;'>Australia Rainfall Predictor</h1>", unsafe_allow_html=True)
-st.text('It uses Machine Learning Algorithm to predict the rainfall.')
-st.text("Please enter the values below:")
+st.text('It uses Machine Learning Algorithm to predict the rainfall')
 
 ### Taking input from webpage
-a=st.date_input('Date', datetime.date(2019, 7, 6))
-b=st.selectbox('Location', (orig_data['Location'].dropna().sort_values().unique().tolist()))
-c=st.number_input('MinTemp', 0.0)
-d=st.number_input('MaxTemp', 0.0)
-e=st.number_input('Rainfall', 0.0)
-f=st.number_input('Evaporation', 0.0)
-g=st.number_input('Sunshine', 0.0)
-h=st.selectbox('WindGustDir', (orig_data['WindGustDir'].dropna().sort_values().unique().tolist()))
-i=st.number_input('WindGustSpeed', 0.0)
-j=st.selectbox('WindDir9am', (orig_data['WindDir9am'].dropna().sort_values().unique().tolist()))
-k=st.selectbox('WindDir3pm', (orig_data['WindDir3pm'].dropna().sort_values().unique().tolist()))
-l=st.number_input('WindSpeed9am', 0.0)
-m=st.number_input('WindSpeed3pm', 0.0)
-n=st.number_input('Humidity9am', 0.0)
-o=st.number_input('Humidity3pm', 0.0)
-p=st.number_input('Pressure9am', 0.0)
-q=st.number_input('Pressure3pm', 0.0)
-r=st.selectbox('Cloud9am', (orig_data['Cloud9am'].dropna().sort_values().unique().tolist()))
-s=st.selectbox('Cloud3pm', (orig_data['Cloud3pm'].dropna().sort_values().unique().tolist()))
-t=st.number_input('Temp9am', 0.0)
-u=st.number_input('Temp3pm', 0.0)
-v=st.selectbox('RainToday', (orig_data['RainToday'].dropna().sort_values().unique().tolist()))
+col1, col2 = st.columns(2)
+with col1:
+    a=st.date_input('Date', datetime.date(2019, 7, 6))
+    c = st.number_input('MinTemp', 0.0)
+with col2:
+    b = st.selectbox('Location', (orig_data['Location'].dropna().sort_values().unique().tolist()))
+    d = st.number_input('MaxTemp', 0.0)
+
+col1, col2, col3 = st.columns(3)
+with col1:
+    e=st.number_input('Rainfall', 0.0)
+with col2:
+    f=st.number_input('Evaporation', 0.0)
+with col3:
+    g=st.number_input('Sunshine', 0.0)
+
+col1, col2 = st.columns(2)
+with col1:
+    j = st.selectbox('WindDir9am', (orig_data['WindDir9am'].dropna().sort_values().unique().tolist()))
+    l = st.number_input('WindSpeed9am', 0.0)
+    n = st.number_input('Humidity9am', 0.0)
+    p = st.number_input('Pressure9am', 0.0)
+    r = st.slider('Cloud9am', int(orig_data['Cloud9am'].dropna().min().tolist()),
+                  int(orig_data['Cloud9am'].dropna().max().tolist()),
+                  int(orig_data['Cloud9am'].dropna().median().tolist()))
+    t = st.number_input('Temp9am', 0.0)
+with col2:
+    k = st.selectbox('WindDir3pm', (orig_data['WindDir3pm'].dropna().sort_values().unique().tolist()))
+    m = st.number_input('WindSpeed3pm', 0.0)
+    o = st.number_input('Humidity3pm', 0.0)
+    q = st.number_input('Pressure3pm', 0.0)
+    s = st.slider('Cloud3pm', int(orig_data['Cloud3pm'].dropna().min().tolist()),
+                  int(orig_data['Cloud3pm'].dropna().max().tolist()),
+                  int(orig_data['Cloud3pm'].dropna().median().tolist()))
+    u = st.number_input('Temp3pm', 0.0)
+
+col4, col5, col6 = st.columns([1,3,1])
+with col5:
+    h=st.selectbox('WindGustDir', (orig_data['WindGustDir'].dropna().sort_values().unique().tolist()))
+    i=st.number_input('WindGustSpeed', 0.0)
+    v=st.radio('RainToday', ('Yes', 'No'))
 
 ### Creating a list using entered data
 input_data=[a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v]
@@ -103,11 +121,13 @@ output_test2= pd.DataFrame(output_test, columns=['Date', 'Location', 'MinTemp', 
        'Temp3pm', 'RainToday'])
 
 ### Prediction of data
-if st.button("Check if it will rain tomorrow or not", key="predict"):
-    output = model.predict(output_test2)
-    if (output==1):
-        st.warning('It will rain tomorrow')
-    else:
-        st.success('It will not rain tomorrow')
+col1, col2, col3 = st.columns(3)
+with col2:
+    if st.button("Check if it will rain tomorrow or not", key="predict"):
+        output = model.predict(output_test2)
+        if (output==1):
+            st.warning('It will rain tomorrow')
+        else:
+            st.success('It will not rain tomorrow')
 
 
