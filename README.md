@@ -8,11 +8,11 @@ R2 score = 0.88
 
 
 ## Link to access the web app:
-[Australia Rainfall Predictor Link](https://51shubhamchand-ml-rain-prediction-streamlit-wxt7rg.streamlit.app/)
+[Australia Rainfall Predictor Link](https://51shubhamchand-ml-australia-rainfall-predictio-streamlit-k7apmb.streamlit.app/)
 
 
 ## Preview:
-<img width="644" alt="Screenshot 2023-02-05 at 3 48 50 AM" src="https://user-images.githubusercontent.com/36957216/216791839-38575ae3-c173-4741-b641-78dc74394a83.png">
+<img width="717" alt="Screenshot 2023-02-05 at 5 15 36 PM" src="https://user-images.githubusercontent.com/36957216/216816812-cf7fb80c-9530-4fcd-8fe8-fce6345d8fa1.png">
 
 
 ## Data source:
