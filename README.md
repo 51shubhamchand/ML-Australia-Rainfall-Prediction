@@ -7,12 +7,16 @@ Used Random Forest Classification Machine Learning algorithm to predict whether 
 Accuracy score = 88.6%
 
 
-## Link to access the web app:
-[Australia Rainfall Predictor Link](https://51shubhamchand-ml-australia-rainfall-predictio-streamlit-k7apmb.streamlit.app/)
+## Links
+### [Australia Rainfall Predictor App Link](https://51shubhamchand-ml-australia-rainfall-predictio-streamlit-k7apmb.streamlit.app/)
+### [Australia Rainfall Analysis Dashboard Link](https://public.tableau.com/app/profile/shubham.chand3035/viz/AustraliaRainfallDashboard/RainfallAnalysis?publish=yes)
 
 
-## Preview:
+## Preview of App:
 <img width="717" alt="Screenshot 2023-02-05 at 5 15 36 PM" src="https://user-images.githubusercontent.com/36957216/216816812-cf7fb80c-9530-4fcd-8fe8-fce6345d8fa1.png">
+
+
+## Preview of Dashboard:
 
 
 ## Challenges:
