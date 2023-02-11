@@ -16,9 +16,6 @@ Accuracy score = 88.6%
 <img width="717" alt="Screenshot 2023-02-05 at 5 15 36 PM" src="https://user-images.githubusercontent.com/36957216/216816812-cf7fb80c-9530-4fcd-8fe8-fce6345d8fa1.png">
 
 
-## Preview of Dashboard:
-
-
 ## Challenges:
 1. Poor quality of data : Data was having a lot of NULL value for multiple columns.
 
