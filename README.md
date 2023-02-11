@@ -54,6 +54,7 @@ https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
 * Google Colab
 * Pycharm
 * Streamlit
+* Tableau
 
 
 ## References:
