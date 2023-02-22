@@ -15,6 +15,9 @@ Accuracy score = 88.6%
 ## Preview of App:
 <img width="717" alt="Screenshot 2023-02-05 at 5 15 36 PM" src="https://user-images.githubusercontent.com/36957216/216816812-cf7fb80c-9530-4fcd-8fe8-fce6345d8fa1.png">
 
+## Preview of Dashboard:
+<img width="1423" alt="Screenshot 2023-02-23 at 2 56 18 AM" src="https://user-images.githubusercontent.com/36957216/220762854-e68bbec6-308b-4ba6-b363-004dfab71075.png">
+
 
 ## Challenges:
 1. Poor quality of data : Data was having a lot of NULL value for multiple columns.
